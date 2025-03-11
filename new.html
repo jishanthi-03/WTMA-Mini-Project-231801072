@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Signup Form</h2>
+        <form id="signupForm">
+            <label>First Name:</label>
+            <input type="text" id="firstName"><span class="error" id="firstNameError"></span>
+            <br>
+            <label>Last Name:</label>
+            <input type="text" id="lastName"><span class="error" id="lastNameError"></span>
+            <br>
+            <label>Email:</label>
+            <input type="email" id="email"><span class="error" id="emailError"></span>
+            <br>
+            <label>Date of Birth:</label>
+            <input type="date" id="dob"><span class="error" id="dobError"></span>
+            <br>
+            <label>Age:</label>
+            <input type="number" id="age" min="10" max="99"><span class="error" id="ageError"></span>
+            <br>
+            <label>Gender:</label>
+            <div class="gender-container">
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+            <span class="error" id="genderError"></span>
+            <br>
+            <label>Phone Number:</label>
+            <input type="text" id="phone"><span class="error" id="phoneError"></span>
+            <br>
+            <label>Address:</label>
+            <textarea id="address"></textarea><span class="error" id="addressError"></span>
+            <br>
+            <a href="results.html"><button type="button" id="signupBtn" >Signup</button></a>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
